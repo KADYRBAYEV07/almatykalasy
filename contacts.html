@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байланыс | Алматы — менің қалам</title>
+  <meta name="description" content="Кері байланыс формасы — пікіріңіз бен ұсынысыңызды қалдырыңыз.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Негізгі мәзір">
+      <a href="index.html" class="brand"><span class="dot"></span>Алматы</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="places.html">Көрікті жерлер</a></li>
+        <li><a href="culture.html">Мәдениет</a></li>
+        <li><a href="contacts.html" class="active">Байланыс</a></li>
+      </ul>
+      <button class="burger" aria-label="Мәзірді ашу" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Байланыс</p>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 14px">Кері байланыс</h1>
+      <p class="lead">Сайт туралы пікіріңіз бар ма? Толтырыңыз — әр өріс тексеріледі.</p>
+
+      <div class="form-wrap" style="margin-top:34px">
+        <!-- Форма -->
+        <form id="feedback-form" novalidate>
+          <div class="field">
+            <label for="f-name">Атыңыз</label>
+            <input type="text" id="f-name" name="name" placeholder="Мысалы: Дастан" autocomplete="name">
+            <div class="err">Атыңызды енгізіңіз (кемінде 2 әріп).</div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="example@mail.com" autocomplete="email">
+            <div class="err">Жарамды email мекенжайын енгізіңіз.</div>
+          </div>
+          <div class="field">
+            <label for="f-topic">Тақырып</label>
+            <select id="f-topic" name="topic">
+              <option>Жалпы пікір</option>
+              <option>Көрікті жерлер</option>
+              <option>Техникалық ұсыныс</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Хабарлама</label>
+            <textarea id="f-msg" name="message" placeholder="Пікіріңізді жазыңыз..."></textarea>
+            <div class="err">Хабарлама кемінде 5 таңбадан тұруы керек.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Жіберу</button>
+          <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+        </form>
+
+        <!-- Контакт ақпараты -->
+        <aside class="contact-card">
+          <h3>Жоба туралы</h3>
+          <p>Бұл сайт META University-дегі оқу практикасы аясында дайындалды.</p>
+          <div class="row"><span>📍</span><span>Алматы қаласы, Қазақстан</span></div>
+          <div class="row"><span>🎓</span><span>META University · ИС-25-1к тобы</span></div>
+          <div class="row"><span>🌐</span><span>Танымдық веб-жоба «Алматы — менің қалам»</span></div>
+          <p style="margin-top:20px;font-size:.9rem;opacity:.85">
+            Форма статикалық сайтта жұмыс істейді: деректер браузерде тексеріліп,
+            растау хабарламасы көрсетіледі.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html" class="brand"><span class="dot"></span>Алматы — менің қалам</a>
+        <p>Оқу практикасы аясында жасалған танымдық веб-жоба.</p>
+      </div>
+      <div>
+        <p><a href="index.html">Басты бет</a> · <a href="places.html">Көрікті жерлер</a> · <a href="culture.html">Мәдениет</a></p>
+        <p>© <span id="year">2026</span> · META University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

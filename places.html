@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Көрікті жерлер | Алматы — менің қалам</title>
+  <meta name="description" content="Алматының басты көрікті жерлері: Көктөбе, Медеу, Шымбұлақ және басқалары.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Негізгі мәзір">
+      <a href="index.html" class="brand"><span class="dot"></span>Алматы</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="places.html" class="active">Көрікті жерлер</a></li>
+        <li><a href="culture.html">Мәдениет</a></li>
+        <li><a href="contacts.html">Байланыс</a></li>
+      </ul>
+      <button class="burger" aria-label="Мәзірді ашу" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="section" style="padding-bottom:30px">
+    <div class="container">
+      <p class="eyebrow">Көрікті жерлер</p>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 14px">Қаланың тыныс-тіршілігі</h1>
+      <p class="lead">Алматыда таулар, мұз айдыны, телемұнара мен жасыл бульварлар бір-бірімен
+         астасады. Төменде қаланың ең танымал орындары.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid cols-3">
+        <article class="card">
+          <img src="koktobe.jpg" alt="Көктөбе телемұнарасы">
+          <div class="body">
+            <h3>Көктөбе</h3>
+            <p>Қала үстіндегі төбе мен 372 метрлік телемұнара. Кәдімгі канат жолымен
+               көтеріліп, бүкіл Алматыны алақанға салғандай көруге болады.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="medeu.webp" alt="Медеу мұз айдыны">
+          <div class="body">
+            <h3>Медеу</h3>
+            <p>Әлемдегі ең биік таулы мұз айдыны (1691 м). Мұнда конькимен сырғанап,
+               таза тау ауасымен тыныстауға болады.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="panorama.jpg" alt="Шымбұлақ тау курорты">
+          <div class="body">
+            <h3>Шымбұлақ</h3>
+            <p>Медеудің жоғарысындағы тау шаңғысы курорты. Қыста шаңғышылар, жазда
+               серуендеушілер келетін аймақ.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- audio -->
+  <section class="section" style="background:var(--sand)">
+    <div class="container">
+      <div class="media-row">
+        <div>
+          <p class="eyebrow">Атмосфера</p>
+          <h2>Қаланың әуенін тыңда</h2>
+          <p class="lead">Серуендеу кезінде осы домбыра сазын қосып қойыңыз — ол қаланың
+             баяу, жайлы ырғағын жеткізеді.</p>
+        </div>
+        <div class="media-box">
+          <h3>Алматы</h3>
+          <p> әуен.</p>
+          <audio controls preload="metadata">
+            <source src="algashky-mahabbatym.mp3" type="audio/mpeg">
+            Браузеріңіз аудионы қолдамайды.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html" class="brand"><span class="dot"></span>Алматы — менің қалам</a>
+        <p>Оқу практикасы аясында жасалған танымдық веб-жоба.</p>
+      </div>
+      <div>
+        <p><a href="index.html">Басты бет</a> · <a href="culture.html">Мәдениет</a> · <a href="contacts.html">Байланыс</a></p>
+        <p>© <span id="year">2026</span> · META University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

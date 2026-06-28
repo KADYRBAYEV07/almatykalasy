@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алматы — менің қалам | Басты бет</title>
+  <meta name="description" content="Алматы туралы танымдық сайт: тарихы, көрікті жерлері, мәдениеті мен климаты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== Беттер арасындағы навигация ====== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Негізгі мәзір">
+      <a href="index.html" class="brand"><span class="dot"></span>Алматы</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Басты бет</a></li>
+        <li><a href="places.html">Көрікті жерлер</a></li>
+        <li><a href="culture.html">Мәдениет</a></li>
+        <li><a href="contacts.html">Байланыс</a></li>
+      </ul>
+      <button class="burger" aria-label="Мәзірді ашу" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section class="hero">
+    <img class="hero-bg" src="panorama.jpg" alt="Алматы тауларының панорамасы">
+    <div class="container">
+      <p class="eyebrow">Қазақстанның оңтүстік жүрегі</p>
+      <h1>Алматы — <span class="ac">менің</span> қалам</h1>
+      <p>Тау бөктеріндегі, алма ағаштарына, ескі көшелер мен заманауи қарқынға толы қала.
+         Алатаудың етегінен басталатын тарихпен таныс.</p>
+      <div class="actions">
+        <a href="places.html" class="btn btn-primary">Көрікті жерлерді көру →</a>
+        <a href="#media" class="btn btn-ghost">Видео мен сазды тыңдау</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Бет ішіндегі навигация ====== -->
+  <nav class="page-nav" aria-label="Бет ішіндегі мәзір">
+    <ul>
+      <li><a href="#qala" class="current">Қала туралы</a></li>
+      <li><a href="#klimat">Климаты</a></li>
+      <li><a href="#sandar">Сандармен</a></li>
+      <li><a href="#media">Видео &amp; саз</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== Қала туралы ====== -->
+  <section class="section" id="qala">
+    <div class="container">
+      <p class="eyebrow">Қала туралы</p>
+      <div class="grid cols-2">
+        <div>
+          <h2>Алма өсетін қала</h2>
+          <p class="lead">«Алматы» атауы «алма» сөзінен шыққан. Қала Іле Алатауының
+             етегінде, 600–1700 метр биіктікте орналасқан. Бұл — Қазақстанның ең үлкен
+             қаласы әрі елдің мәдени, ғылыми және қаржылық орталығы.</p>
+          <ul class="feature-list">
+            <li><span class="mk">◆</span> 1854 жылы Верный бекінісі ретінде негізі қаланды.</li>
+            <li><span class="mk">◆</span> 1929–1997 жылдары — Қазақстанның астанасы болды.</li>
+            <li><span class="mk">◆</span> Атақты «апорт» алмасының отаны.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="alma.jpg" alt="Алматы апорты — қала символы">
+          <div class="body">
+            <h3>Апорт</h3>
+            <p>Қала символына айналған ірі әрі хош иісті алма сорты. Қаланың атауы да,
+               рухы да осы жеміспен тығыз байланысты.</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider"><img src="butterfly.avif" alt=""></div>
+    </div>
+  </section>
+
+  <!-- ====== Климаты ====== -->
+  <section class="section" id="klimat" style="background:var(--sand)">
+    <div class="container">
+      <p class="eyebrow">Климаты</p>
+      <h2>Тау мен дала арасында</h2>
+      <p class="lead">Алматы климаты — континентальды. Қыс жұмсақ әрі қарлы, жаз ыстық
+         әрі құрғақ. Тау бөктерінде ауа райы қала орталығынан салқынырақ — сондықтан
+         қала тұрғындары жазда таулы Медеу мен Шымбұлаққа қарай көтеріледі.</p>
+      <div class="grid cols-3" style="margin-top:30px">
+        <div class="card"><div class="body"><h3>Көктем</h3>
+          <p>Алма ағаштары гүлдейтін, қала ең әсем көрінетін мезгіл.</p></div></div>
+        <div class="card"><div class="body"><h3>Жаз</h3>
+          <p>Орталықта +30°C-қа дейін; таулы аймақта салқын әрі жайлы.</p></div></div>
+        <div class="card"><div class="body"><h3>Қыс</h3>
+          <p>Шаңғы маусымы: Шымбұлақ курорты тау шаңғышыларын тартады.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Сандармен ====== -->
+  <section class="section" id="sandar">
+    <div class="container">
+      <p class="eyebrow">Сандармен</p>
+      <h2>Алматы бір қарағанда</h2>
+      <div class="stats">
+        <div class="stat"><div class="num">2,2 млн</div><div class="lbl">тұрғын саны</div></div>
+        <div class="stat"><div class="num">1854</div><div class="lbl">негізі қаланған жыл</div></div>
+        <div class="stat"><div class="num">~700 м</div><div class="lbl">орташа биіктік</div></div>
+        <div class="stat"><div class="num">8</div><div class="lbl">әкімшілік ауданы</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Видео & аудио ====== -->
+  <section class="section" id="media" style="background:var(--sand)">
+    <div class="container">
+      <p class="eyebrow">Видео &amp; саз</p>
+      <h2>Қаланы көріп, тыңда</h2>
+      <div class="media-row" style="margin-top:26px">
+        <div class="media-box">
+          <h3>Қысқа видео-интро</h3>
+          <p>Алатау таңы — қала тынысын жеткізетін қысқа бейнетаспа.</p>
+          <video controls poster="butterfly.avif" preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+            Браузеріңіз видеоны қолдамайды.
+          </video>
+        </div>
+        <div class="media-box">Алматы</h3>
+          <p>Қалаға арналған  әуен.</p>
+          <audio controls preload="metadata">
+            <source src="algashky-mahabbatym.mp3" type="audio/mpeg">
+            Браузеріңіз аудионы қолдамайды.
+          </audio>
+          <p style="margin-top:18px"><a href="contacts.html" class="btn btn-primary">Пікір қалдыру →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html" class="brand"><span class="dot"></span>Алматы — менің қалам</a>
+        <p>Оқу практикасы аясында жасалған танымдық веб-жоба.</p>
+      </div>
+      <div>
+        <p><a href="places.html">Көрікті жерлер</a> · <a href="culture.html">Мәдениет</a> · <a href="contacts.html">Байланыс</a></p>
+        <p>© <span id="year">2026</span> · META University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

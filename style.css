@@ -1,0 +1,179 @@
+/* ====== Almaty — менің қалам :: негізгі стиль ====== */
+:root{
+  --ink:#16261F;        /* терең қарағай — мәтін */
+  --pine:#1F4D3D;       /* тау жасылы */
+  --pine-dark:#18342A;
+  --snow:#F5F7F4;       /* фон */
+  --apple:#C2453A;      /* екпін — алма қызылы */
+  --apple-dark:#A8392F;
+  --teal:#7FA9A0;
+  --amber:#D89B5A;
+  --sand:#EDE7DC;
+  --line:rgba(22,38,31,.12);
+  --shadow:0 14px 40px -18px rgba(22,38,31,.45);
+  --r:16px;
+  --maxw:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Golos Text",system-ui,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--snow);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.brand{font-family:"Unbounded","Golos Text",sans-serif;line-height:1.1;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:var(--pine);text-underline-offset:3px}
+.container{max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
+.section{padding:72px 0}
+.eyebrow{
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--apple);font-weight:600;margin:0 0 12px
+}
+.lead{font-size:1.12rem;max-width:62ch;color:#34453d}
+
+/* ---------- Header / nav between pages ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,247,244,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;text-decoration:none;color:var(--ink)}
+.brand .dot{width:12px;height:12px;border-radius:50%;background:var(--apple);display:inline-block}
+.nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav-links a{
+  text-decoration:none;color:var(--ink);font-weight:500;font-size:.97rem;
+  padding:6px 2px;border-bottom:2px solid transparent;transition:.2s
+}
+.nav-links a:hover{color:var(--apple)}
+.nav-links a.active{border-bottom-color:var(--apple);color:var(--apple)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:26px;height:2px;background:var(--ink);margin:5px 0;transition:.25s}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;color:var(--snow);overflow:hidden;background:var(--ink)}
+.hero img.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero .container{position:relative;padding-top:96px;padding-bottom:104px}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);margin:0 0 18px;color:var(--snow)}
+.hero h1 .ac{color:var(--apple)}
+.hero p{max-width:54ch;font-size:1.15rem;color:#dfe7e1}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 24px;border-radius:999px;font-weight:600;font-size:.98rem;
+  text-decoration:none;cursor:pointer;border:2px solid transparent;transition:.2s
+}
+.btn-primary{background:var(--apple);color:#fff}
+.btn-primary:hover{background:var(--apple-dark)}
+.btn-ghost{border-color:rgba(245,247,244,.5);color:var(--snow)}
+.btn-ghost:hover{background:rgba(245,247,244,.12)}
+
+/* ---------- in-page nav (бет ішіндегі мәзір) ---------- */
+.page-nav{
+  position:sticky;top:68px;z-index:40;
+  background:var(--pine);border-radius:0;
+}
+.page-nav ul{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:10px 24px;max-width:var(--maxw);margin-inline:auto}
+.page-nav a{
+  text-decoration:none;color:#cfe0d8;font-size:.9rem;font-weight:500;
+  padding:7px 14px;border-radius:999px;transition:.2s
+}
+.page-nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.page-nav a.current{background:var(--apple);color:#fff}
+
+/* ---------- generic blocks ---------- */
+.grid{display:grid;gap:26px}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+.cols-2{grid-template-columns:1.1fr .9fr;align-items:center}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s
+}
+.card:hover{transform:translateY(-4px)}
+.card img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.card .body{padding:20px 22px}
+.card h3{margin:0 0 8px;font-size:1.18rem}
+.card p{margin:0;color:#3a4a42;font-size:.97rem}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.stat .num{font-family:"Unbounded";font-size:2rem;color:var(--apple);line-height:1}
+.stat .lbl{font-size:.86rem;color:#4a5a52;margin-top:8px}
+
+.media-row{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.media-box{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.media-box h3{margin:0 0 6px;font-size:1.15rem}
+.media-box p{margin:0 0 16px;color:#3a4a42;font-size:.95rem}
+audio,video{width:100%;border-radius:10px}
+video{background:#000}
+
+.divider{margin:8px 0 0}
+.divider img{width:100%;max-width:520px;margin-inline:auto}
+
+/* lists */
+.feature-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.feature-list li{display:flex;gap:12px;align-items:flex-start}
+.feature-list .mk{color:var(--apple);font-weight:700;flex:none}
+
+/* ---------- form ---------- */
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.contact-card{background:var(--pine);color:#eaf1ec;border-radius:var(--r);padding:30px}
+.contact-card h3{color:#fff;margin-top:0}
+.contact-card a{color:#fff}
+.contact-card .row{display:flex;gap:12px;margin:14px 0;align-items:flex-start}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.field input,.field textarea,.field select{
+  width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;
+  font:inherit;color:var(--ink);background:var(--snow);transition:.2s
+}
+.field input:focus,.field textarea:focus,.field select:focus{
+  outline:none;border-color:var(--apple);box-shadow:0 0 0 3px rgba(194,69,58,.15);background:#fff
+}
+.field textarea{min-height:120px;resize:vertical}
+.err{color:var(--apple);font-size:.84rem;margin-top:5px;display:none}
+.field.invalid .err{display:block}
+.field.invalid input,.field.invalid textarea{border-color:var(--apple)}
+.form-msg{display:none;margin-top:14px;padding:14px 16px;border-radius:10px;
+  background:#e7f1ea;border:1px solid var(--pine);color:var(--pine);font-weight:600}
+.form-msg.show{display:block}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--ink);color:#bcccc3;padding:46px 0;margin-top:20px}
+.site-footer .container{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.site-footer a{color:#dfe7e1}
+.site-footer .brand{color:#fff}
+
+/* ---------- focus visibility ---------- */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:3px solid var(--amber);outline-offset:2px;border-radius:6px
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .cols-3{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .media-row,.form-wrap{grid-template-columns:1fr}
+  .cols-2{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  .burger{display:block}
+  .nav-links{
+    position:absolute;top:68px;left:0;right:0;background:var(--snow);
+    flex-direction:column;gap:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);
+    transform:translateY(-130%);transition:.3s;box-shadow:var(--shadow)
+  }
+  .nav-links.open{transform:translateY(0)}
+  .nav-links a{padding:12px 0;border-bottom:1px solid var(--line)}
+  .cols-3{grid-template-columns:1fr}
+  .section{padding:54px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto !important;transition:none !important}
+}
